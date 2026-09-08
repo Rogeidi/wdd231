@@ -1,14 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Câmara de Comércio Americana sp</title>
+    <meta name="description" content="Página sobre Câmara de comércio de Americana SP">
+    <meta name="author" content="Rogeidi Vela">
+    <!------------ESTILOS---------------------->
+    <!--
+    <link rel="stylesheet" href="estilos/normalize.css">
+    -->
+    <link rel="stylesheet" href="estilos/telas-pequenas.css">
+    <link rel="stylesheet" href="estilos/maior.css">
+
+
+    <!------------FONTE----------------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
+    <header>
+        <img src="imagens/camara-de-comercio-americana.svg" alt="Logo do Site" width="220" height="220">
+        <span>Câmara de Comércio Americana sp</span>
+        <button id="ham-btn" class="hamburger"></button>
+    </header>
+    <nav id="nav-bar" class="navegacao">
+        <ul>
+            <li><a href="#">Página Inicial</a></li>
+            <li><a href="#">Projeto da Câmara</a></li>
+            <li><a href="#">Projeto Final</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Página Inicial</h1>
+        <section class="sobre-mim">
+            <h2>Sobre Mim</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo aut explicabo doloremque commodi nihil esse
+                maxime nobis! Vero, hic saepe nemo veritatis libero fugiat quaerat facere iste nihil! Autem,
+                consequatur.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo eveniet repellendus voluptatum sed
+                impedit consequuntur sequi, autem culpa ab repudiandae quos tempora beatae, magni dolor ex ullam odit
+                doloribus debitis!
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat, dolor eaque dolorem ullam et error
+                tempore vero architecto iste, sit adipisci harum, voluptatum magni nisi consequatur omnis eum! Aperiam,
+                aliquam.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita assumenda perferendis voluptatibus
+                dicta id porro deserunt aliquam, sequi nemo, nobis ex eum deleniti necessitatibus ducimus placeat
+                debitis mollitia! Soluta, repellat.
+            </p>
+        </section>
+        <section class="foto-perfil">
+            <h2>Foto do Estudante</h2>
+            <img src="imagens/perfil.jpg" alt="Foto de perfil">
+        </section>
+        <section class="cursos">
+            <h2>Cursos de Certificação Web</h2>
+            <div class="filtros-container">
+                <button class="btn-filtro active" data-categoria="todos">Todos</button>
+                <button class="btn-filtro" data-categoria="cse">CSE</button>
+                <button class="btn-filtro" data-categoria="wdd">WDD</button>
+            </div>
+            <div class="cursos-container"></div>
+        </section>
+    </main>
+    <footer>
+        <p>O total de créditos para os cursos listados acima é 6</p>
+        <div class="social">
+            <a href="https://github.com/Rogeidi/wdd231" target="_blank"><img src="imagens/github.svg"
+                    alt="Imagen Github" width="16px" height="16px"></a>
+            <a href="https://www.linkedin.com/in/rogeidi-r-vela-de-sierra-280049397/" target="_blank"><img
+                    src="imagens/linkedin.svg" alt="Imagen LinkeIn" width="16px" height="16px"></a>
+            <a href="https://instagram.com" target="_blank"><img src="imagens/instagram.svg" alt="Imagen Instagram"
+                    width="16px" height="16px"></a>
+            <a href="https://whatsapp.com" target="_blank"><img src="imagens/whatsapp.svg" alt="Imagen Whatsapp"
+                    width="16px" height="16px"></a>
+        </div>
+        <div class="direitos-container">
+            <span id="anoAtual">&copy; |Rogeidi | Americana sp</span>
+            <p id="ultimaModificacao">Última Modificação</p>
+        </div>
+
+    </footer>
+
+    <!------------SCRIPTS----------------------->
+    <script src="scripts/navegacao.js" defer></script>
+    <script src="scripts/curso.js" defer></script>
+    <script src="scripts/datas.js" defer></script>
+
+
 
 </body>
+
 
 </html>

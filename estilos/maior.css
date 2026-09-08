@@ -1,0 +1,82 @@
+@media only screen and (min-width: 48rem) {
+
+    header,
+    nav,
+    main,
+    footer {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    header {
+        grid-template-columns: auto 1rf;
+        border-bottom: none;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .navegacao {
+        display: block;
+        background-color: #ddd;
+    }
+
+    .navegacao ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .navegacao a {
+        border-bottom: none;
+        padding: 1rem 20px;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 20px;
+        padding: 10px;
+    }
+
+    h1 {
+        grid-column: 1 / -1;
+        margin-left: 0;
+    }
+
+    .sobre-mim,
+    .foto-perfil {
+        margin-bottom: 0;
+        border: 1px solid #ccc;
+    }
+
+    .cursos {
+        grid-column: 1 / -1;
+        margin-top: 2rem;
+        background-color: #f9f5f5;
+        border: 1px solid #ccc;
+    }
+
+    .filtros-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 15px;
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    .cursos-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 15px;
+        max-width: 100%;
+        padding: 0 15px;
+        margin-top: 15px;
+    }
+
+    footer {
+        margin-top: 2rem;
+    }
+
+}

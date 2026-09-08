@@ -1,0 +1,221 @@
+/* ------- Esquema de Cores-------
+terra cota:   #E07A5F
+deep slate blue: #3D405B
+
+----------------*/
+
+/**************** WEB SITE************/
+
+* {
+    font-family: 'Roboto' sans-serif;
+    box-sizing: border-box;
+}
+
+/**************CABECALHO**************/
+
+header {
+    display: grid;
+    grid-template-columns: 35px auto 44px;
+    padding: 5px 0 5px 10px;
+    border-bottom: solid 1px #ddd;
+    column-gap: 8px;
+    align-items: center;
+}
+
+header img {
+    display: block;
+    width: 45px;
+    height: auto;
+    padding-bottom: 0px 5px;
+}
+
+header span {
+    font-size: 1.2 rem;
+    color: #3D405B;
+}
+
+.hamburger {
+    background: none;
+    border: none;
+    color: #3D405B;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hamburger::after {
+    content: "\2630";
+    font-size: 2rem;
+}
+
+.hamburger.show::after {
+    content: "\00D7"
+}
+
+/**************NAVEGACAO**************/
+
+.navegacao {
+    display: none;
+
+}
+
+.navegacao.show {
+    display: block;
+}
+
+.navegacao ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navegacao a {
+    display: block;
+    padding: .8rem 10px;
+    color: #3D405B;
+    text-decoration: none;
+    border-bottom: solid 1px #ddd;
+
+}
+
+h1 {
+    margin-left: 10px;
+}
+
+.navegacao a:hover {
+    background-color: #f7f1ef;
+}
+
+/**************MAIN**************/
+
+section {
+    margin-bottom: 2rem;
+    border-radius: 3px;
+}
+
+.sobre-mim {
+    padding: 10px;
+    background-color: #f9f5f5;
+
+}
+
+h2 {
+    text-align: center;
+    background-color: #ddd;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+.foto-perfil {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f5f5;
+
+}
+
+.foto-perfil h2 {
+    background-color: #ddd;
+    width: 100%;
+}
+
+.foto-perfil img {
+    width: 200px;
+    height: auto;
+    padding-bottom: 30px;
+    padding-top: 5px;
+
+}
+
+.cursos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f5f5;
+    padding-bottom: 20px;
+}
+
+.cursos h2 {
+    width: 100%;
+}
+
+.cursos-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 5px;
+    width: 100%;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.curso-item {
+    background-color: #ede7e7;
+    text-align: center;
+    padding: 15px 20px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+
+
+}
+
+/**************FOOTER**************/
+
+footer {
+
+    padding: 1rem 0 0 0;
+    text-align: center;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+    padding: 5px;
+    margin-bottom: 15px;
+}
+
+.social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px #ccc;
+    border-radius: 4px;
+    width: 44px;
+    height: 44px;
+}
+
+.social img {
+    width: 22px;
+    height: 22px;
+}
+
+.social a:hover {
+    background-color: #ddd;
+}
+
+.direitos-container {
+    background-color: #f9f5f5;
+    width: 100%;
+    padding: 15px 10px;
+    box-sizing: border-box;
+}
+
+#anoAtual {
+    display: block;
+    margin: 0 0 8px 0;
+    font-weight: bold;
+}
+
+#ultimaModificacao {
+    margin: 0;
+}
