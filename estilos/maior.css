@@ -9,7 +9,7 @@
     }
 
     header {
-        grid-template-columns: auto 1rf;
+        grid-template-columns: auto 1fr;
         border-bottom: none;
     }
 

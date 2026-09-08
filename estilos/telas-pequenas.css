@@ -7,7 +7,7 @@ deep slate blue: #3D405B
 /**************** WEB SITE************/
 
 * {
-    font-family: 'Roboto' sans-serif;
+    font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
 }
 
@@ -26,11 +26,11 @@ header img {
     display: block;
     width: 45px;
     height: auto;
-    padding-bottom: 0px 5px;
+    padding-bottom: 5px;
 }
 
 header span {
-    font-size: 1.2 rem;
+    font-size: 1.2rem;
     color: #3D405B;
 }
 
