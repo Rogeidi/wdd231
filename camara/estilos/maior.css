@@ -1,0 +1,46 @@
+@media (min-width: 768px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+        padding: 25px 20px;
+
+    }
+
+    .logo-titulo-container {
+        border-bottom: solid 1px #c2bfbf;
+        max-width: 800px;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .navegacao {
+        display: block;
+        position: static;
+        width: auto;
+        border-bottom: none;
+
+    }
+
+    .navegacao ul {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .navegacao ul li a {
+        padding: 8px 16px;
+        border-bottom: none;
+        border-radius: 4px;
+        background: #f6eaea;
+        transition: background-color 02s, color 02s;
+    }
+
+    .navegacao ul li a:hover {
+        background-color: #ede7e7;
+        color: #3D405B;
+    }
+
+}
