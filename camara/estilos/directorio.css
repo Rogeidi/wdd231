@@ -1,0 +1,226 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f7f1ef;
+    color: #3D405B;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #f9f5f5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: solid 1px #ddd;
+}
+
+header span {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #3D405B;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.hamburger {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #3D405B;
+    padding: 10px;
+    display: block;
+}
+
+.navegacao {
+    display: none;
+    width: 100%;
+    background-color: #f9f5f5;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    border-bottom: solid 1px #ddd;
+    z-index: 1000;
+}
+
+.navegacao.aberto {
+    display: block;
+}
+
+.navegacao ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.navegacao ul li a {
+    display: block;
+    padding: 15px 20px;
+    color: #3D405B;
+    text-decoration: none;
+    font-weight: 500;
+    border-bottom: solid 1px #ede7e7;
+}
+
+.navegacao ul li a:hover {
+    background-color: #ede7e7;
+
+}
+
+.logo-titulo-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo-titulo-container img {
+    max-width: 120px;
+    height: auto;
+
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+.introducao {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.introducao h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.grid-empresas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.cartao-empresa {
+    background-color: #ede7e7;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cartao-empresa:hover {
+    transform: translateY(-5px);
+}
+
+.cartao-empresa h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    border-bottom: solid 1px #ddd;
+    padding-bottom: 1px;
+    background-color: #c6c3c3;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.cartao-empresa p {
+    margin: 8px 0;
+    font-size: 1rem;
+}
+
+.cartao-empresa strong {
+    font-weight: 700;
+}
+
+footer {
+    background-color: #f9f5f5;
+    border-top: solid 1px #ddd;
+    padding: 30px 20px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.solcial a img {
+    transition: transform 0.2s;
+}
+
+.social a img:hover {
+    transform: scale(1.2);
+}
+
+.direitos-container {
+    font-size: 0.9rem;
+}
+
+.dereitos-container p {
+    margin-top: 5px;
+    font-style: italic;
+}
+
+@media (min-width: 768px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+        padding: 25px 20px;
+
+    }
+
+    .logo-titulo-container {
+        border-bottom: solid 1px #c2bfbf;
+        max-width: 800px;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .navegacao {
+        display: block;
+        position: static;
+        width: auto;
+        border-bottom: none;
+        
+    }
+
+    .navegacao ul {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .navegacao ul li a {
+        padding: 8px 16px;
+        border-bottom: none;
+        border-radius: 4px;
+        background: #f6eaea;
+        transition: background-color 02s, color 02s;
+    }
+
+    .navegacao ul li a:hover {
+        background-color: #ede7e7;
+        color: #3D405B;
+    }
+
+}
