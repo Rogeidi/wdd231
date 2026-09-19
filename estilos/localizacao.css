@@ -1,0 +1,27 @@
+body {
+    background-color: rgb(251, 246, 241);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.painel {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(236, 224, 211);
+    width: 90px;
+    padding: 10px;
+    border: solid 2px ;
+    border-radius: 8px;
+    text-align: center;
+}
+footer {
+    border-top: 2px solid #ccc;
+    padding-top: 15px;
+    margin-top: 15px;
+}

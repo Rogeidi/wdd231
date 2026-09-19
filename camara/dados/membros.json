@@ -5,85 +5,108 @@
             "categoria": "Comércio e Serviços",
             "distrital": "Centro",
             "cidade": "Americana - SP",
-            "telefone": "(19) 3406-1000"
+            "telefone": "(19) 3406-1000",
+            "logotipo": "imagens/Alfa-papeleria.jpg",
+            "nivel_associacao": "Bronze"
         },
         {
             "nome": "Têxtil Americana S/A",
             "categoria": "Indústria Têxtil",
             "distrital": "Leste",
             "cidade": "Americana - SP",
-            "telefone": "(19) 3468-3000"
+            "telefone": "(19) 3468-3000",
+            "logotipo": "imagens/textil-americana.jpg",
+            "nivel_associacao": "Ouro"
         },
         {
             "nome": "Arkus Propaganda e Marketing",
             "categoria": "Serviços Profissionais",
             "distrital": "Centro",
             "cidade": "Americana - SP",
-            "telefone": "(19) 3407-4000"
+            "telefone": "(19) 3407-4000",
+            "logotipo": "imagens/arkus-propaganda.jpg",
+            "nivel_associacao": "Prata"
         },
         {
             "nome": "BC Empreendimentos e Engenharia",
             "categoria": "Construção e Imobiliária",
             "distrital": "Oeste",
             "cidade": "Americana - SP",
-            "telefone": "(19) 3461-5000"
+            "telefone": "(19) 3461-5000",
+            "logotipo": "imagens/BC-empeendimentos.jpg",
+            "nivel_associacao": "Prata"
         },
         {
             "nome": "Metalúrgica São Vito",
             "categoria": "Indústria e Metalurgia",
             "distrital": "Sul",
             "cidade": "Americana - SP",
-            "telefone": "(19) 3478-6000"
+            "telefone": "(19) 3478-6000",
+            "logotipo": "imagens/metalurgica-sao-vito.jpg",
+            "nivel_associacao": "Ouro"
         },
         {
             "nome": "Panificadora Bella Citta",
             "categoria": "Alimentação e Restaurantes",
             "distrital": "Centro",
             "cidade": "Americana - SP",
-            "telefone": "(19) 3405-7000"
+            "telefone": "(19) 3405-7000",
+            "logotipo": "imagens/Panificadora-Bella-Citta.jpg",
+            "nivel_associacao": "Prata"
         },
         {
             "nome": "Fios e Tecidos Tecelagem Progresso",
             "categoria": "Indústria Têxtil",
             "distrital": "Oeste",
             "cidade": "Americana - SP",
-            "telefone": "(19) 3455-8800"
+            "telefone": "(19) 3455-8800",
+            "logotipo": "imagens/fios-e-tecidos.jpg",
+            "nivel_associacao": "Ouro"
         },
         {
             "nome": "Supermercado Pague Menos - Loja Brasil",
             "categoria": "Comércio e Varejo",
             "distrital": "Leste",
             "cidade": "Americana - SP",
-            "telefone": "(19) 3471-9900"
+            "telefone": "(19) 3471-9900",
+            "logotipo": "imagens/supermercado-pague-menos.jpg",
+            "nivel_associacao": "Ouro"
         },
         {
             "nome": "Clínica Médica Saúde Integral",
             "categoria": "Saúde e Bem-Estar",
             "distrital": "Sul",
             "cidade": "Americana - SP",
-            "telefone": "(19) 3408-1122"
+            "telefone": "(19) 3408-1122",
+            "logotipo": "imagens/clinica-medica.jpg",
+            "nivel_associacao": "Bronze"
         },
-         {
+        {
             "nome": "TechSoluções Sistemas de Informação",
             "categoria": "Tecnologia e Inovação",
             "distrital": "Centro",
             "cidade": "Americana - SP",
-            "telefone": "(19) 3462-4455"
+            "telefone": "(19) 3462-4455",
+            "logotipo": "imagens/TechSoluções-sistemas.jpeg",
+            "nivel_associacao": "Ouro"
         },
-         {
+        {
             "nome": "Oficina Mecânica Alinhamento Total",
             "categoria": "Serviços Automotivos",
             "distrital": "Norte",
             "cidade": "Americana - SP",
-            "telefone": "(19) 3469-7788"
+            "telefone": "(19) 3469-7788",
+            "logotipo": "imagens/oficina-mecanica.jpg",
+            "nivel_associacao": "Prata"
         },
-         {
+        {
             "nome": "Livraria e Papelaria Saber",
             "categoria": "Comércio e Varejo",
             "distrital": "Centro",
             "cidade": "Americana - SP",
-            "telefone": "(19) 3404-3344"
+            "telefone": "(19) 3404-3344",
+            "logotipo": "imagens/livraria-saber.jpg",
+            "nivel_associacao": "Bronze"
         }
-    
     ]
 }

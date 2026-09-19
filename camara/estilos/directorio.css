@@ -133,6 +133,12 @@ h1 {
     padding: 20px;
 }
 
+.logo-empresa {
+    border-radius: 8px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
 .cartao-empresa {
     background-color: #ede7e7;
     border: 1px solid #ccc;
@@ -183,7 +189,7 @@ footer {
     margin-bottom: 20px;
 }
 
-.solcial a img {
+.social a img {
     transition: transform 0.2s;
 }
 

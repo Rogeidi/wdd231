@@ -1,29 +1,7 @@
-document.addEventListener("DOMContentLoaded", () => {
-    carregarEmpresas();
-    atualizarRodape();
-    configurarMenuHamburger();
-});
-
-function configurarMenuHamburger() {
-    const botaoHam = document.getElementById("ham-btn");
-    const barraNav = document.getElementById("nav-bar");
-
-    if (botaoHam && barraNav) {
-        botaoHam.addEventListener("click", () => {
-            barraNav.classList.toggle("aberto");
-
-            if (barraNav.classList.contains("aberto")) {
-                botaoHam.textContent = "✕";
-            }
-            else {
-                botaoHam.textContent = "☰";
-            }
-        });
-    }
-}
-
 function carregarEmpresas() {
     const container = document.getElementById("diretorio-empresas");
+
+    if (!container) return;
 
     fetch("dados/membros.json")
         .then(response => {
@@ -37,9 +15,16 @@ function carregarEmpresas() {
 
             dados.empresas.forEach(empresa => {
                 const cartao = document.createElement("div");
-                cartao.className = "cartao-empresa";
+
+                const nivel = empresa.nivel_associacao ? empresa.nivel_associacao.toLowerCase() : 'bronze';
+
+                cartao.className = `cartao-empresa nivel-${nivel}`;
+
+                const fotoCaminho = empresa.logotipo ? empresa.logotipo : "https://placehold.co";
+
 
                 cartao.innerHTML = `
+                    <img src="${fotoCaminho}" alt="Logo de ${empresa.nome}" class="logo-empresa">
                     <h3>${empresa.nome}</h3>
                     <p><strong>📍 Localidade:</strong> ${empresa.cidade}</p>
                     <p><strong>🏷️ Categoria:</strong> ${empresa.categoria}</p>
@@ -57,19 +42,4 @@ function carregarEmpresas() {
         });
 }
 
-function atualizarRodape() {
-    const anoAtualElemento = document.getElementById("anoAtual");
-    if (anoAtualElemento) {
-        const ano = new Date().getFullYear();
-        anoAtualElemento.innerHTML = `&copy; ${ano} | Rogeidi | Americana SP`;
-    }
-
-    const ultimaModificacaoElemento = document.getElementById("ultimaModificacao");
-    if (ultimaModificacaoElemento) {
-        const dataModificacao = new Date(document.lastModified);
-        const opcoesFormatacao = { day: '2-digit', month: '2-digit', year: 'numeric', hour: '2-digit', minute: '2-digit' };
-        const dataFormatada = dataModificacao.toLocaleDateString('pt-BR', opcoesFormatacao);
-
-        ultimaModificacaoElemento.textContent = `Última Modificação: ${dataFormatada}`
-    }
-}
+carregarEmpresas();
