@@ -227,6 +227,38 @@ h1 {
     margin-top: 5px;
 }
 
+.previsao-3-dias {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.dia-previsao {
+    background-color: #f6eaea;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    flex: 1;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+}
+
+.rotulo-dia {
+    font-size: 0.85rem;
+    color: #3D405B;
+    margin-bottom: 5px;
+}
+
+.temp-dia {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #d32f2f;
+}
+
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -238,7 +270,8 @@ h1 {
     border: 0;
 }
 
-.container-destaques, #diretorio-empresas {
+.container-destaques,
+#diretorio-empresas {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 25px;
