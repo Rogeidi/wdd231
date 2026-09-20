@@ -4,16 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Câmara de Comércio - Página Inicial</title>
-    <meta name="description"
-        content="Conecte-se ao Diretorio da Câmara de Comércio de Americana. Onde encontrará nossas empresas parceiras com as quais poderá entrar em contato.">
+    <title>Câmara de Comércio  Americana SP</title>
+    <meta name="description" content="Conecte-se com as melhores empresas de Americana, SP. Encontre membros parceiros, previsão do tempo local e eventos da comunidade.">
     <meta name="author" content="Rogeidi Raquel Vela de Sierra">
 
-    <meta property="og:title" content="Diretorio">
-    <meta property="og:description"
-        content="Conecte-se ao Diretorio da Câmara de Comércio de Americana. Onde encontrará nossas empresas parceiras com as quais poderá entrar em contato.">
+    <meta property="og:title" content="Página Inicial - Câmara de Comércio de Americana">
+    <meta property="og:description" content="Conecte-se com as melhores empresas de Americana, SP. Encontre membros parceiros, previsão do tempo local e eventos da comunidade.">
     <meta property="og:url" content="https://github.io">
-    <meta property="og:image" content="https://github.io">
+    <meta property="og:image" content="https://rogeidi.github.io/wdd231/camara/imagens/americana.jpg">
 
     <link rel="icon" href="imagens/camara-comercio.ico">
 
@@ -27,6 +25,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
 
+    <script src="scripts/index.js" defer></script>
+    <script src="scripts/temperatura.js" defer></script>
 
 </head>
 
@@ -64,15 +64,15 @@
 
         <section class="secao-previsao-tempo">
             <h2>Previsão do Tempo Local</h2>
-            <h3 id="local"></h3>
+            <h3 id="local">Carregando...</h3>
             <div class="painel">
-                <img id="imagem" src="" alt="">
+                <img id="imagem" src="https://openweathermap.org" alt="Ícone do tempo">
                 <p id="descricao"></p>
                 <p id="temperatura"></p>
                 <p id="data-atual"></p>
             </div>
             <div class="previsao-3-dias" id="previsao-3-dias">
-                
+
             </div>
         </section>
 
@@ -134,10 +134,6 @@
             <p id="ultimaModificacao">Última Modificação</p>
         </div>
     </footer>
-
-    <script src="scripts/diretorio.js" defer></script>
-    <script src="scripts/index.js"></script>
-    <script src="scripts/temperatura.js"></script>
 </body>
 
 </html>

@@ -136,6 +136,9 @@ main h2::after {
     color: white;
     width: 90%;
     max-width: 800px;
+    background-color: rgba(0, 0, 0, 0.55);
+    padding: 20px;
+    border-radius: 12px;
 }
 
 h1 {
@@ -157,7 +160,7 @@ h1 {
 
 .btn-cta {
     display: inline-block;
-    background-color: #f04949;
+    background-color: #c62828;
     color: #fff;
     text-decoration: none;
     padding: 12px 28px;
@@ -357,7 +360,7 @@ h1 {
 
 .data-evento {
     font-weight: 700;
-    color: #d32f2f;
+    color: #b71c1c;
     font-size: 1.1rem;
     border-bottom: 1px solid #ccc;
     padding-bottom: 5px;
