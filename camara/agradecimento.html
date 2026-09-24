@@ -4,19 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diretório de Empresas - Câmara de Comércio</title>
-    <meta name="description" content="Conecte-se ao Diretório da Câmara de Comércio de Americana. Onde encontrará nossas empresas parceiras com as quais poderá entrar em contato.">
+    <title>Câmara de Comércio  Americana SP - Associe-se</title>
+    <meta name="description" content="Conecte-se com as melhores empresas de Americana, SP. Encontre membros parceiros, previsão do tempo local e eventos da comunidade.">
     <meta name="author" content="Rogeidi Raquel Vela de Sierra">
 
-    <meta property="og:title" content="Diretório da Câmara de Comércio de Americana">
-    <meta property="og:description" content="Conecte-se ao Diretório da Câmara de Comércio de Americana. Onde encontrará nossas empresas parceiras com as quais poderá entrar em contato.">
+    <meta property="og:title" content="Página Inicial - Câmara de Comércio de Americana">
+    <meta property="og:description" content="Conecte-se com as melhores empresas de Americana, SP. Encontre membros parceiros, previsão do tempo local e eventos da comunidade.">
     <meta property="og:url" content="https://github.io">
-    <meta property="og:image" content="https://rogeidi.github.io/wdd231/camara/imagens/clinica-medica.jpg">
+    <meta property="og:image" content="https://rogeidi.github.io/wdd231/camara/imagens/americana.jpg">
 
     <link rel="icon" href="imagens/camara-comercio.ico">
 
-    <link rel="stylesheet" href="estilos/directorio.css">
-    <link rel="stylesheet" href="estilos/maior.css">
+    <link rel="stylesheet" href="estilos/normalize.css">
+    <link rel="stylesheet" href="estilos/index.css">
+    <link rel="stylesheet" href="estilos/maior-index.css">
+
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,11 +26,14 @@
         rel="stylesheet">
 
     <script src="scripts/index.js" defer></script>
-    <script src="scripts/diretorio.js" defer></script>
+    <script src="scripts/associacao.js" defer></script>
+    <script src="scripts/agradecimento.js" defer></script>
+
 </head>
 
 <body>
     <header>
+
         <div class="logo-titulo-container">
             <img src="imagens/camara-comercio.svg" alt="Logo do Site" width="220" height="220">
             <span>Diretorio Câmara de Comércio Americana sp</span>
@@ -44,21 +49,25 @@
                 <li><a href="associacao.html">Associe-se</a></li>
             </ul>
         </nav>
-
     </header>
 
     <main>
-        <h1>Diretório Câmara de Comércio Americana SP</h1>
-
-        <section class="introducao">
-            <h2>Guia Oficial de Negócios Locais</h2>
-            <p>Explore as indútrias, comércios e prestadores de serviços cadastrados em nosso município.</p>
+        <section class="mensagem-sucesso">
+            <h1>Muito Obrigado!</h1>
+            <p>Sua solicitação de associação foi enviada com sucesso para nossa equipe.</p>
         </section>
 
-        <section id="diretorio-empresas" class="grid-empresas">
-            <h2 class="visually-hidden">Lista de Empresas Cdastradas</h2>
-            <p class="carregando">Carregando o diretório de empresas em Americana...</p>
+        <section class="resumo-dados-container">
+            <h2>Resumo das Informações Enviadas</h2>
+
+            <div id="resumo-dados"></div>
         </section>
+
+        <div class="link-retorno">
+            <a href="index.html">Voltar para a página Inicial</a>
+        </div>
+
+
     </main>
     <footer>
         <div class="social">

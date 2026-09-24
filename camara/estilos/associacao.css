@@ -1,0 +1,278 @@
+.associacao-main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.introducao-associacao p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333333;
+}
+
+.introducao-associacao h1 {
+    font-size: 1.8rem;
+    color: #3D405B;
+    text-align: center;
+    text-shadow: none;
+
+
+}
+
+.layout-associacao-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.formulario-container {
+    background-color: #fbf9f6;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+#form-associacao {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#form-associacao label {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-weight: bold;
+    color: #333333;
+}
+
+#form-associacao input[type="text"],
+#form-associacao input[type="email"],
+#form-associacao input[type="tel"],
+#form-associacao select,
+#form-associacao textarea {
+    padding: 12px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+#form-associacao input:focus,
+#form-associacao select:focus,
+#form-associacao textarea:focus {
+    outline: none;
+    border-color: #960018;
+    box-shadow: 0 0 0 3px rgba(150, 0, 24, 0.2);
+}
+
+.botao-wrapper input[type="submit"] {
+    background-color: #960018;
+    color: #ffffff;
+    padding: 14px 28px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+.botao-wrapper input[type="submit"]:hover {
+    background-color: #a06a6a;
+}
+
+#container-cartoes-planos h2 {
+    color: #3D405B;
+    margin-bottom: 20px;
+    font-size: 1.6rem;
+}
+
+.grid-cartoes {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cartao-plano {
+    background-color: #f0ece9;
+    border-left: 6px solid #d9b310;
+    border-top: 1px solid #e0e0e0;
+    border-right: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 20px;
+    border-radius: 0 8px 8px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.cartao-plano h3 {
+    margin-top: 0;
+    color: #960018;
+    font-size: 1.3rem;
+    margin-bottom: 12px;
+}
+
+.cartao-plano .nome-plano-label {
+    color: #3D405B;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.cartao-plano p {
+    color: #333333;
+    font-size: 0.95rem;
+    line-height: 1.4;
+    margin-bottom: 18px;
+}
+
+.btn-abrir-modal {
+    background-color: #fbf9f6;
+    color: #960018;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s;
+}
+
+.btn-abrir-modal:hover {
+    background-color: #e3bcc1;
+}
+
+.modal-custo-box {
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px dashed #cccccc;
+    font-weight: bold;
+    color: #960018;
+}
+
+@keyframes entradaSuave {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+.animar-entrada {
+    opacity: 0;
+    animation: entradaSuave 0.6s ease-out forwards;
+}
+
+#card-np {
+    animation-delay: 0.1s;
+}
+
+#card-bronze {
+    animation-delay: 0.s;
+}
+
+#card-silver {
+    animation-delay: 0.5s;
+}
+
+#card-gold {
+    animation-delay: 0.7s;
+}
+
+
+.janela-modal-overlay {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.conteudo-modal-janela {
+    background-color: #ffffff;
+    margin: 15% auto;
+    padding: 25px;
+    border-radius: 8px;
+    width: 85%;
+    max-width: 500px;
+    position: relative;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.modal-cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom: 1px dashed #aaaaaa;
+    margin-bottom: 15px;
+}
+
+.modal-cabecalho h3 {
+    margin: 0;
+    color: #960018;
+}
+
+.btn-fechar-modal {
+    background-color: #e5dfdf;
+    border: 1px solid #aaaaaa;
+    padding: 4px 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    color: #888888;
+    border-radius: 4px;
+    line-height: 1;
+}
+
+.btn-fechar-modal:hover {
+    background-color: #d5cdcd;
+    color: #000000;
+}
+
+.modal-corpo {
+    text-align: left;
+}
+
+.beneficios-titulo {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333333;
+}
+
+.conteudo-modal-janela ul {
+    padding-left: 20px;
+    margin-bottom: 0;
+}
+
+.conteudo-modal-janela li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+    color: #333333;
+}
+
+
+@media only screen and (min-width: 850px) {
+    .layout-associacao-grid {
+        display: grid;
+        grid-template-columns: 1fr 400px;
+        gap: 40px;
+        align-items: start;
+    }
+
+    .grid-cartoes {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
