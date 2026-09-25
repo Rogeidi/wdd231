@@ -152,35 +152,42 @@
     color: #960018;
 }
 
+#form-associacao fieldset,
 .grupo-nivel-associacao {
     border: 1px solid #cccccc;
     border-radius: 6px;
-    padding: 15px;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    text-align: left;
 }
 
-.grupo-nivel-associacao legend {
+#form-associacao fieldset legend {
     font-weight: bold;
     color: #333333;
-    padding: 0 5px;
-    font-size: 0.95rem;
+    padding: 0 8px;
 }
 
+#form-associacao fieldset label,
 .opcao-radio {
     display: flex;
-    flex-direction: row; 
+    flex-direction: row;
     align-items: center;
     gap: 10px;
     cursor: pointer;
     font-weight: normal;
+    text-align: left;
 }
 
-.opcao-radio input[type="radio"] {
+#form-associacao fieldset input[type="radio"] {
     width: auto;
+    margin: 0;
     cursor: pointer;
+    display: inline-block;
 }
+
+
 
 @keyframes entradaSuave {
     from {
@@ -293,6 +300,10 @@
 
 
 @media only screen and (min-width: 850px) {
+    .grupo-nivel-associacao {
+        grid-template-columns: 1fr;
+    }
+
     .layout-associacao-grid {
         display: grid;
         grid-template-columns: 1fr 400px;
