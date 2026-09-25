@@ -95,16 +95,29 @@
                         <input type="text" name="organizacao" id="organizacao" autocomplete="organization" title="Nome da empresa ou organização" required>
                     </label>
 
-                    <label title="selecione o nível de assiciação">
-                        <span>Nível de Associação: *</span>
-                        <select name="nivel_associacao" id="nivel_associacao" title="Selecione o nível de associação" required>
-                            <option value="" disabled selected>Escolha uma opção...</option>
-                            <option value="np">Associação NP (Sem fins lucrativos)</option>
-                            <option value="bronze">Associação Bronze</option>
-                            <option value="silver">Associação Prata</option>
-                            <option value="gold">Associação Ouro</option>
-                        </select>
-                    </label>
+                    <fieldset class="grupo-nivel-asossiacao"> 
+                        <legend>Nível de Associação: *</legend>
+
+                        <label class="opcao-radio">
+                            <input type="radio" name="nivel_asossiacao" value="np" title="Asossiação NP" required>
+                            <span>Associação NP (Sem fins lucrativos)</span>
+                        </label>
+
+                        <label class="opcao-radio">
+                            <input type="radio" name="nivel_asossiacao" value="bronze" title="Asossiação Bronze" required>
+                            <span>Associação Bronze</span>
+                        </label>
+
+                        <label class="opcao-radio">
+                            <input type="radio" name="nivel_asossiacao" value="silver" title="Asossiação Prata" required>
+                            <span>Associação Prata</span>
+                        </label>
+
+                        <label class="opcao-radio">
+                            <input type="radio" name="nivel_asossiacao" value="gold" title="Asossiação Ouro" required>
+                            <span>Associação Ouro</span>
+                        </label>
+                    </fieldset>
 
                     <label>
                         <span>Descrição da Atividade/Organização:</span>
