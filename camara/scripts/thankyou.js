@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const organizacao = parametros.get("organizacao") || "Naõ informado";
 
 
-    const nivelRaw = parametros.get("nivel_associacao") || "Não informado";
+    const nivelRaw = parametros.get("membership_level") || "Não informado";
     let nivelTexto = nivelRaw;
     if (nivelRaw === "np") nivelTexto = "Associação NP (Sem fins lucrativos)";
     if (nivelRaw === "bronze") nivelTexto = "Associação Bronze";
