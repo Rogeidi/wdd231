@@ -1,19 +1,20 @@
-/* Configurações Globais baseadas no Planejamento */
+
 body {
-    background-color: #F9F8F6; /* Creme Suave */
+    background-color: #F9F8F6;
     color: #333333;
-    font-family: 'Inter', sans-serif; /* Fonte do Corpo */
+    font-family: 'Inter', sans-serif;
     margin: 0;
     padding: 0;
+    padding-left: 20px;
 }
 
 h1, h2, h3 {
-    font-family: 'Playfair Display', serif; /* Fonte dos Títulos */
-    color: #1E3F20; /* Verde Floresta Escuro */
+    font-family: 'Playfair Display', serif; 
+    color: #1E3F20; 
 }
 
 header {
-    background-color: #1E3F20; /* Verde Floresta */
+    background-color: #1E3F20; 
     color: #F9F8F6;
 }
 
@@ -25,9 +26,9 @@ header {
 }
 
 .botao-reserva:hover {
-    background-color: #A3B899; /* Verde Sálvia ao passar o mouse */
+    background-color: #A3B899;
 }
 
 .secao-secundaria {
-    background-color: #A3B899; /* Fundo sutil para destaques */
+    background-color: #A3B899; 
 }
