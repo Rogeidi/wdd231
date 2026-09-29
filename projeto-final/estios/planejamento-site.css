@@ -1,4 +1,3 @@
-
 body {
     background-color: #F9F8F6;
     color: #333333;
@@ -8,13 +7,19 @@ body {
     padding-left: 20px;
 }
 
-h1, h2, h3 {
-    font-family: 'Playfair Display', serif; 
-    color: #1E3F20; 
+h1,
+h2,
+h3 {
+    font-family: 'Playfair Display', serif;
+    color: #1E3F20;
 }
 
 header {
-    background-color: #1E3F20; 
+    background-color: #1E3F20;
+    color: #F9F8F6;
+}
+
+header h1 {
     color: #F9F8F6;
 }
 
@@ -30,5 +35,5 @@ header {
 }
 
 .secao-secundaria {
-    background-color: #A3B899; 
+    background-color: #A3B899;
 }
