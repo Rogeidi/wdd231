@@ -1,0 +1,33 @@
+/* Configurações Globais baseadas no Planejamento */
+body {
+    background-color: #F9F8F6; /* Creme Suave */
+    color: #333333;
+    font-family: 'Inter', sans-serif; /* Fonte do Corpo */
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif; /* Fonte dos Títulos */
+    color: #1E3F20; /* Verde Floresta Escuro */
+}
+
+header {
+    background-color: #1E3F20; /* Verde Floresta */
+    color: #F9F8F6;
+}
+
+.botao-reserva {
+    background-color: #1E3F20;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+}
+
+.botao-reserva:hover {
+    background-color: #A3B899; /* Verde Sálvia ao passar o mouse */
+}
+
+.secao-secundaria {
+    background-color: #A3B899; /* Fundo sutil para destaques */
+}
