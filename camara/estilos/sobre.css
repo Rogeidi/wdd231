@@ -1,0 +1,204 @@
+main h1 {
+    font-size: 2rem;
+    color: #3D405B;
+    text-align: center;
+    text-shadow: none;
+}
+
+.mensagem-visita {
+    background-color: #ede7e7;
+    color: #3D405B;
+    padding: 1rem;
+    border-radius: 8px;
+    border-left: 5px solid #c62828;
+    margin-bottom: 2rem;
+    font-weight: 500;
+    text-align: center;
+    font-size: 1.5rem;
+
+}
+
+
+.grid-container {
+    display: grid;
+    gap: 2rem;
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    grid-template-columns:  1fr;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "titulo"
+    "imagem"
+    "descricao"
+    "endereco"
+    "botao";
+    background-color: #fdfdfd;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    gap: 1.2rem;
+    align-content: start;
+}
+
+.card h2 {
+    grid-area: titulo;
+    margin: 0 0 0.5rem 0;
+    color: #3D405B;
+    font-size: 1.4rem;    
+    padding-bottom: 0.5rem;
+    position: static;
+}
+
+.card h2::after {
+    display: none;
+}
+
+.card figure {
+    grid-area: imagem;
+    margin: 0;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+.card figure img {
+    width: 100%;
+    max-width: 300px;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    border: 1.5px solid #999999;
+    border-radius: 8px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.card address {
+    grid-area: endereco;
+    font-style: normal;
+    color: #555555;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.card p {
+    grid-area: descricao;
+    margin: 0;
+    color: #333333;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.card .btn-saiba-mais {
+    grid-area: botao;
+    justify-self: start;
+    padding: 0.6rem 1.2rem;
+    background-color: #c62828;
+    color: #ffffff;
+    border: 1px solid #999999;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+}
+
+.card .btn-saiba-mais:hover {
+    background-color: #ee9797;
+}
+
+@media (min-width: 320px) and (max-width: 640px) {
+
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "titulo"
+        "imagem"
+        "descricao"
+        "endereco"
+        "botao";
+    }
+
+    .card figure img {
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card {
+        grid-template-columns: 300px 1fr;
+        grid-template-areas: 
+        "titulo"
+        "imagem"
+        "descricao"
+        "endereco"
+        "botao";
+        gap: 1.5rem;
+    }
+}
+
+
+
+@media (min-width: 1025px) {
+
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .card {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "titulo"
+        "imagem"
+        "descricao"
+        "endereco"
+        "botao";
+        gap: 1.2rem;
+    }
+
+    .card figure {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .card figure img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 8px;
+        display: block;
+        
+    }
+
+    .card .btn-saiba-mais {
+        justify-self: stretch;
+        text-align: center;
+    }
+
+    .card figure img {
+        transition: transform 0.3s ease;
+    }
+
+    .card:hover figure img {
+        transform: scale(1.03);
+    }
+
+    
+
+}
