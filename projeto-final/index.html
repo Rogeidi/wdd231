@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BiblioTech Alvorada - Acervo Digital da Biblioteca Escolar</title>
+    <meta name="description"
+        content="Explore o acervo da BiblioTech Alvorada. busque livros, reserve título, confira eventos literários e gerencie seus empréstimos escolares online.">
+    <meta name="author" content="Rogeidi Vela">
+
+    <meta property="og:title" content="BiblioTech Alvorada - Biblioteca Escolar">
+    <meta property="og:description"
+        content="Facilitando a leitura e o aprendizado com tecnologia. Acesse nosso acervo digital escolar.">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://unsplash.com/es/fotos/una-larga-fila-de-libros-en-una-biblioteca-My06S-Wg_zc">
+
+    <link rel="icon" href="imagens/livro.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="estilos/base.css">
+    <link rel="stylesheet" href="estilos/index.css">
+
+    <script src="scripts/main.js" type="module" defer></script>
+
+</head>
+
+<body>
+    <header>
+
+        <div class="logo">
+            <img src="imagens/logo.webp" alt="Logotipo BiblioTech" class="logo-imagem">
+            <h1>BiblioTech Alvorada</h1>
+        </div>
+        <button class="menu-hamburger" id="menuHamburger" aria-label="Abrir menu de navegação">☰</button>
+        <nav>
+            <ul id="navMenu">
+                <li><a href="index.html" class="active">Início</a></li>
+                <li><a href="eventos.html">Eventos</a></li>
+                <li><a href="reserva.html">Reservas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Bem-vindo à Biblioteca Escolar</h2>
+            <p>Encontre livros físicos e digitais para apoiar os seus estudos e projetos pedagógicos.</p>
+        </section>
+
+        <section class="acervo-section">
+            <h3>Nosso Acervo</h3>
+            <div class="filtros">
+                <input type="text" id="buscaLivro" placeholder="Buscar livro por título ou autor...">
+                <button id="btnBuscarLocal" class="btn-busca">Filtrar Meu Acervo</button>
+                <button id="btnBuscarAPI" class="btn-busca-api">Buscar na Biblioteca Global</button>
+            </div>
+
+            <div id="containerLivros" class="livros-grid">
+
+            </div>
+        </section>
+    </main>
+
+    <div id="modalLivro" class="modal" aria-hidden="true" role="dialog">
+        <div class="modal-content">
+
+            <div id="detalhesModal">
+
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 🌻 Rogeidi Vela 🌻 WDD-231. 🌻 Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+
+</html>

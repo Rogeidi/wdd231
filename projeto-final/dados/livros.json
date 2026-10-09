@@ -1,0 +1,162 @@
+[
+  {
+    "id": 1,
+    "titulo": "O Meu Pé de Laranja Lima",
+    "autor": "José Mauro de Vasconcelos",
+    "ano": 1968,
+    "disponivel": true,
+    "imagem": "imagens/01-O-Meu-Pe.jpg"
+  },
+  {
+    "id": 2,
+    "titulo": "O Menino Maluquinho",
+    "autor": "Ziraldo",
+    "ano": 1980,
+    "disponivel": true,
+    "imagem": "imagens/02-O-Menino.jpg"
+  },
+  {
+    "id": 3,
+    "titulo": "O Mistério do Cinco Estrelas",
+    "autor": "Marcos Rey",
+    "ano": 1981,
+    "disponivel": true,
+    "imagem": "imagens/03-O-Mistério.jpg"
+  },
+  {
+    "id": 4,
+    "titulo": "Marcelo, Marmelo, Martelo",
+    "autor": "Ruth Rocha",
+    "ano": 1976,
+    "disponivel": true,
+    "imagem": "imagens/04-Marcelo- Marmelo.jpg"
+  },
+  {
+    "id": 5,
+    "titulo": "Bisa Bia, Bisa Bel",
+    "autor": "Ana Maria Machado",
+    "ano": 1981,
+    "disponivel": false,
+    "imagem": "imagens/05-Bisa-Bia.jpg"
+  },
+  {
+    "id": 6,
+    "titulo": "Chapeuzinho Amarelo",
+    "autor": "Chico Buarque",
+    "ano": 1970,
+    "disponivel": true,
+    "imagem": "imagens/06-Chapeuzinho.jpg"
+  },
+  {
+    "id": 7,
+    "titulo": "A Bolsa Amarela",
+    "autor": "Lygia Bojunga",
+    "ano": 1976,
+    "disponivel": true,
+    "imagem": "imagens/07-A-Bolsa.jpg"
+  },
+  {
+    "id": 8,
+    "titulo": "As Aventuras de Tibicuera",
+    "autor": "Érico Veríssimo",
+    "ano": 1943,
+    "disponivel": true,
+    "imagem": "imagens/08-As-Aventuras.jpg"
+  },
+  {
+    "id": 9,
+    "titulo": "Corda Bamba",
+    "autor": "Lygia Bojunga",
+    "ano": 1979,
+    "disponivel": false,
+    "imagem": "imagens/09-Corda-Bamba.jpg"
+  },
+  {
+    "id": 10,
+    "titulo": "Ou Isto ou Aquilo",
+    "autor": "Cecília Meireles",
+    "ano": 1964,
+    "disponivel": true,
+    "imagem": "imagens/10-Ou-Isto.jpg"
+  },
+  {
+    "id": 11,
+    "titulo": "O Reizinho Mandão",
+    "autor": "Ruth Rocha",
+    "ano": 1978,
+    "disponivel": true,
+    "imagem": "imagens/11-O-Reizinho.jpg"
+  },
+  {
+    "id": 12,
+    "titulo": "O Menino Grão de Milho",
+    "autor": "Ana Maria Machado",
+    "ano": 1985,
+    "disponivel": true,
+    "imagem": "imagens/12-O-Menino.jpg"
+  },
+  {
+    "id": 13,
+    "titulo": "Reinações de Narizinho",
+    "autor": "Monteiro Lobato",
+    "ano": 1931,
+    "disponivel": false,
+    "imagem": "imagens/13-Reinações-de.jpg"
+  },
+  {
+    "id": 14,
+    "titulo": "Os Três Mosqueteiros",
+    "autor": "Alexandre Dumas",
+    "ano": 2001,
+    "disponivel": true,
+    "imagem": "imagens/14-Os-tres.jpg"
+  },
+  {
+    "id": 15,
+    "titulo": "A Estrela Sobe",
+    "autor": "Marques Rebelo",
+    "ano": 1939,
+    "disponivel": true,
+    "imagem": "imagens/15-A-Estrela.jpg"
+  },
+  {
+    "id": 16,
+    "titulo": "O Rapto do Garoto de Ouro",
+    "autor": "Marcos Rey",
+    "ano": 1982,
+    "disponivel": true,
+    "imagem": "imagens/16-O-Rapto.jpg"
+  },
+  {
+    "id": 17,
+    "titulo": "O Fantástico Mistério de Feiurinha",
+    "autor": "Pedro Bandeira",
+    "ano": 1986,
+    "disponivel": false,
+    "imagem": "imagens/17-O-Fantástico.jpg"
+  },
+  {
+    "id": 18,
+    "titulo": "Uma Ideia Toda Azul",
+    "autor": "Marina Colasanti",
+    "ano": 1979,
+    "disponivel": true,
+    "imagem": "imagens/18-Uma-Ideia.jpg"
+  },
+  {
+    "id": 19,
+    "titulo": "O Menino no Espelho",
+    "autor": "Fernando Sabino",
+    "ano": 1982,
+    "disponivel": true,
+    "imagem": "imagens/19-O-Menino.jpg"
+  },
+  {
+    "id": 20,
+    "titulo": "As aventuras de um barquinho de papel",
+    "autor": "Zélia Maria Wanderley Dantas",
+    "ano": 210,
+    "disponivel": true,
+    "imagem": "imagens/20-As-aventuras.jpg"
+  }
+]

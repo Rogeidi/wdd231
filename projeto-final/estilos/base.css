@@ -1,0 +1,150 @@
+:root {
+    --verde-floresta: #1E3F20;
+    --creme-suave: #F9F8F6;
+    --verde-salvia: #A3B899;
+    --texto-escuro: #2B2B2B;
+    --branco: #ffffff;
+    --fonte-titulos: 'Playfair Display', Gergia, serrif;
+    --fonte-corpo: 'Inter', Arial, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--creme-suave);
+    color: var(--texto-escuro);
+    font-family: var(--fonte-corpo);
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: var(--verde-floresta);
+    color: var(--branco);
+    padding: 1rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.logo-imagem {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    border-radius: 60px;
+}
+
+header h1 {
+    font-family: var(--fonte-titulos);
+    font-size: 1.7rem;
+    letter-spacing: 0.5px;
+}
+
+.menu-hamburger {
+    background: none;
+    border: none;
+    color: var(--branco);
+    font-size: 1.8rem;
+    cursor: pointer;
+    display: block;
+    padding: 0.2rem;
+    transition: 0.2s ease;
+}
+
+.menu-hamburger:active {
+    transform: scale(0.9);
+}
+
+nav ul {
+    display: none;
+    list-style: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--verde-floresta);
+    padding: 1rem 1.5rem;
+    z-index: 1000;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+nav ul.open {
+    display: flex;
+}
+
+nav ul li {
+    margin: 0.8rem 0;
+}
+
+nav ul li a {
+    color: var(--branco);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1rem;
+    display: block;
+    transition: color 0.3s ease;
+
+}
+
+nav ul li a:hover, 
+nav ul li a.active {
+    color: var(--verde-salvia);
+}
+
+footer {
+    background-color: var(--verde-floresta);
+    color: var(--branco);
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: auto;
+    font-size: 0.9rem;
+    border-top: 3px solid var(--verde-salvia);
+}
+
+@media (min-width: 768px) {
+    header {
+        padding: 1rem 3rem;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    .menu-hamburger {
+        display: none;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        position: static;
+        background: none;
+        padding: 0;
+        width: auto;
+        border-top: none;
+    }
+
+    nav ul li {
+        margin: 0 1.2rem;
+    }
+
+    nav ul li a {
+        font-size: 1rem;
+    }
+}

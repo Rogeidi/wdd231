@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservas e Inscrições - BiblioTech Alvorada</title>
+    <meta name="description" content="Faça a reserva de livros do acervo ou inscreva sua turma nos eventos literários da BiblioTech Alvorada de forma rápida.">
+    <meta name="author" content="Rogeidi Vela">
+
+    <meta property="og:title" content="Reservas e Inscrições - BiblioTech Alvorada">
+    <meta property="og:description" content="Formulário oficial de reserva de livros e inscrições em eventos escolares.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://unsplash.com/es/fotos/una-larga-fila-de-libros-en-una-biblioteca-My06S-Wg_zc">
+
+    <link rel="icon" href="imagens/livro.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="estilos/base.css">
+    <link rel="stylesheet" href="estilos/reserva.css">
+
+    <script src="scripts/main.js" type="module" defer></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="imagens/logo.webp" alt="Logotipo BiblioTech" class="logo-imagem">
+            <h1>BiblioTech Alvorada</h1>
+        </div>
+        <button class="menu-hamburger" id="menuHamburger" aria-label="Abrir menu de navegação">☰</button>
+        <nav>
+            <ul id="navMenu">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="eventos.html">Eventos</a></li>
+                <li><a href="reserva.html" class="active">Reservas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="formulario-section">
+            <h2>Solicitação de Reserva ou Inscrição</h2>
+            <p>Preencha os dados abaixo de acordo com a sua necessidade pedagógica.</p>
+
+            <form id="formReserva" class="form-estilizado">
+
+                <div class="form-group">
+                    <label for="nomeCompleto">Nome Completo:</label>
+                    <input type="text" id="nomeCompleto" name="usuario" required placeholder="Digite seu nome completo">   
+                </div>
+
+                <div class="form-group">
+                    <label for="tipoUsuario">Vínculo com a Escola:</label>
+                    <select id="tipoUsuario" name="vinculo" required>
+                        <option value="">Selecione uma opção...</option>
+                        <option value="estudante">Estudante</option>
+                        <option value="professor">Professor(a)</option>
+                        <option value="responsavel">Responsável</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="tipoServiço">O que deseja fazer?</label>
+                    <select id="tipoServiço" name="serviço" required>
+                        <option value="">Selecione o serviço...</option>
+                        <option value="reserva">Reservar um Livro do Acervo</option>
+                        <option value="renovacao">Renovar Empréstimo Atual</option>
+                        <option value="evento">Inscrever Turma em evento Cultural</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="detalhesPedido">Nome do Livro ou Evento:</label>
+                    <input type="text" id="detalhesPedido" name="detalhes" required placeholder="Ex: O Diário de Anne Frank ou Clube de Leitura">
+                </div>
+
+                <button type="submit" class="btn-enviar">Enviar Solicitação</button>
+            </form>
+        </section>
+
+
+    </main>
+
+
+    <footer>
+        <p>&copy; 2026 🌻 Rogeidi Vela 🌻 WDD-231. 🌻 Todos os direitos reservados.</p>
+    </footer>
+    
+</body>
+</html>
