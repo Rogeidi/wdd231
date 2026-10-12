@@ -17,7 +17,7 @@ export async function buscarLivrosLocais() {
 export async function buscarLivrosGlobais(termo) {
     if (!termo) return [];
 
-    const url = `https://www.googleapis.com/books/v1/volumes?q=${encodeURIComponent(termo)}&maxResults=15&key=AIzaSyBWWqUsjEZ8l0xvKmP9lgYl6fRZqn5WlMo`;
+    const url = `https://www.googleapis.com/books/v1/volumes?q=${encodeURIComponent(termo)}&maxResults=15`;
 
     try {
         const resposta = await fetch(url);
